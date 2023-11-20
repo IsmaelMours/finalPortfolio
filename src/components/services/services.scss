@@ -1,0 +1,141 @@
+.about__pro-skills {
+  padding: 20px;
+  background: #1a1a2e;
+  border-radius: 5px;
+}
+
+.about-container{
+  margin-top: 50px;
+}
+
+.pro-skills__heading {
+  font-size: 24px;
+  color: #f39c12;
+  text-align: center;
+}
+
+.skill-container {
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns */
+  gap: 40px;
+  justify-content: center;
+  padding: 0 400px;
+}
+
+.skill {
+
+  width: 100px;
+  margin-right: 50px;
+
+}
+.skill {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+}
+
+.skill:hover .tooltip {
+  display: block;
+  opacity: 1;
+  width: 400px;
+}
+
+
+.skill-bar {
+  width: 70px;
+  height: 70px;
+  border: 5px solid #34495e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.percentage {
+  font-size: 15px;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.skill-name {
+  font-size: 18px;
+  color: #d9d9d9;
+  margin-top: 10px;
+ 
+}
+.about__education {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #1a1a2e;
+  border-radius: 5px;
+
+  .about__education-heading {
+    font-size: 24px;
+    color: #f39c12;
+    margin-bottom: 1rem;
+  }
+
+  .about__education-details {
+    font-size: 20px;
+    color: #d9d9d9;
+    margin: 0.5rem 0;
+  }
+}
+/* Global styles for all screen sizes */
+
+/* Add any styles that apply to all screen sizes here */
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .about-details {
+    max-width: 90%;
+    /* Adjust the width for smaller screens */
+  }
+  .skill-container{
+  display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    justify-content: center;
+    gap: unset;
+    padding: 0 200px;
+   
+  }
+
+  .about_details-hello {
+    font-size: 20px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .about-details__paragraph {
+    margin-top: 15px;
+    /* Adjust margin for smaller screens */
+    font-size: 16px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .about__pro-skills {
+    margin-top: 10px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .about__education {
+    margin-top: 10px;
+    /* Adjust margin for smaller screens */
+  }
+}
